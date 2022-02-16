@@ -5,7 +5,7 @@ main {
     place-items: center;
     transform-style: preserve-3d;
     transform: rotate3d(1,1,1, 45deg);
-    /* animation: draaien 10s linear infinite; */
+    animation: draaien 10s linear infinite;
 }
 
 @keyframes draaien {
@@ -31,9 +31,6 @@ ul {
     list-style: none;
 
     transform-style: preserve-3d;
-    
-    /* transform: rotateY(.10turn) rotateX(.10turn); */
-    /* animation: draaien 20s linear infinite; */
 }
 
 ul:first-of-type {
@@ -77,63 +74,63 @@ ul:nth-of-type(10) {
 }
 
 ul:nth-of-type(11) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 1), calc(var(--maat) * 0))
 }
 
 ul:nth-of-type(12) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * -1), var(--maat));
 }
 
 ul:nth-of-type(13) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 1), var(--maat));
+	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 1), var(--maat));
 }
 
 ul:nth-of-type(14) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 0), var(--maat));
 }
 
 ul:nth-of-type(15) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * -1), var(--maat));
+	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * -1), calc(var(--maat) * 0))
 }
 
 ul:nth-of-type(16) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 1), calc(var(--maat) * 0))
 }
 
 ul:nth-of-type(17) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * -1), calc(var(--maat) * -1))
 }
 
 ul:nth-of-type(18) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), calc(var(--maat) * -1))
 }
 
 ul:nth-of-type(19) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 1), calc(var(--maat) * -1))
 }
 
 ul:nth-of-type(20) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * -1), calc(var(--maat) * 0))
 }
 
 ul:nth-of-type(21) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * -1), calc(var(--maat) * -1))
 }
 
 ul:nth-of-type(22) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 0), calc(var(--maat) * 0))
 }
 
 ul:nth-of-type(23) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 0), calc(var(--maat) * -1))
 }
 
 ul:nth-of-type(24) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 1), calc(var(--maat) * 0))
 }
 
 ul:nth-of-type(24) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * -1), var(--maat));
+	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 1), calc(var(--maat) * -1))
 }
 
 ul:nth-of-type(25) {
@@ -162,6 +159,7 @@ li::before {
     height: 87%;
     width: 87%;
     background-color: #C8002F;
+    border-radius: .5em;
 }
 
 ul li:nth-of-type(1) {
@@ -192,12 +190,24 @@ li:nth-of-type(1)::before {
     background-color: #009E3C;
 }
 
+li:nth-of-type(2)::before {
+    background-color: #0047B4;
+}
+
+li:nth-of-type(3)::before {
+    background-color: #FFD300;
+}
+
 li:nth-of-type(4)::before {
     background-color: #ffffff;
 }
 
 li:nth-of-type(5)::before {
     background-color: #C8002F;
+}
+
+li:nth-of-type(6)::before {
+    background-color: #FF4500;
 }
 
 
