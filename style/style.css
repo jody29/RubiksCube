@@ -1,3 +1,17 @@
+:root {
+    --maat: 5em;
+    --x1: calc(var(--maat) * 1);
+    --x2: calc(var(--maat) * -1);
+    --x3: calc(var(--maat) * 0);
+    --y1: calc(var(--maat) * 1);
+    --y2: calc(var(--maat) * -1);
+    --y3: calc(var(--maat) * 0);
+    --z1: calc(var(--maat) * 1);
+    --z2: calc(var(--maat) * -1);
+    --z3: calc(var(--maat) * 0);
+    --transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
 main {
     height: 100vh;
     display: grid;
@@ -7,18 +21,7 @@ main {
     animation: draaien 10s linear infinite;
 }
 
-@keyframes draaien {
-    0% {
-        transform: none;
-    }
-    100% {
-        transform: rotate3d(1,1,1, 360deg);
-    }
-}
-
 ul {
-    --maat: 5em;
-
     position: absolute;
 
     margin: 0;
@@ -32,112 +35,90 @@ ul {
     transform-style: preserve-3d;
 }
 
+/* Bottom layer */
+
 ul:first-of-type {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * -1), var(--maat));
+	transform: var(--transform) translate3d(var(--x2), var(--y1), var(--z1));
 }
-
 ul:nth-of-type(2) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 0), var(--maat));
+	transform: var(--transform) translate3d(var(--x3), var(--y1), var(--z1));
 }
-
 ul:nth-of-type(3) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 1), var(--maat));
+	transform: var(--transform) translate3d(var(--x1), var(--y1), var(--z1));
 }
-
 ul:nth-of-type(4) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(var(--maat), calc(var(--maat) * 1), calc(var(--maat) * 0));
+	transform: var(--transform) translate3d(var(--x2), var(--y1), var(--z3));
 }
-
 ul:nth-of-type(5) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(var(--maat), calc(var(--maat) * 1), calc(var(--maat) * -1));
+	transform: var(--transform) translate3d(var(--x3), var(--y1), var(--z3));
 }
-
 ul:nth-of-type(6) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(var(--maat), calc(var(--maat) * 0), calc(var(--maat) * -1));
+	transform: var(--transform) translate3d(var(--x1), var(--y1), var(--z3));
 }
-
 ul:nth-of-type(7) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(var(--maat), calc(var(--maat) * -1), calc(var(--maat) * -1));
+	transform: var(--transform) translate3d(var(--x2), var(--y1), var(--z2));
 }
-
 ul:nth-of-type(8) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(var(--maat), calc(var(--maat) * 0), calc(var(--maat) * 0));
+	transform: var(--transform) translate3d(var(--x3), var(--y1), var(--z2));
+}
+ul:nth-of-type(9) {
+	transform: var(--transform) translate3d(var(--x1), var(--y1), var(--z2));;
 }
 
-ul:nth-of-type(9) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(var(--maat), calc(var(--maat) * -1), calc(var(--maat) * 0));
-}
+/* Middle layer */
 
 ul:nth-of-type(10) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 1), var(--maat));
+	transform: var(--transform) translate3d(var(--x2), var(--y3), var(--z1));
 }
-
 ul:nth-of-type(11) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 1), calc(var(--maat) * 0))
+	transform: var(--transform) translate3d(var(--x3), var(--y3), var(--z1));
 }
-
 ul:nth-of-type(12) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * -1), var(--maat));
+	transform: var(--transform) translate3d(var(--x1), var(--y3), var(--z1));
 }
-
 ul:nth-of-type(13) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 1), var(--maat));
+	transform: var(--transform) translate3d(var(--x2), var(--y3), var(--z3));
 }
-
 ul:nth-of-type(14) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 1), calc(var(--maat) * 0), var(--maat));
+	transform: var(--transform) translate3d(var(--x1), var(--y3), var(--z3));
 }
-
 ul:nth-of-type(15) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * -1), calc(var(--maat) * 0))
+	transform: var(--transform) translate3d(var(--x2), var(--y3), var(--z2));
 }
-
 ul:nth-of-type(16) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 1), calc(var(--maat) * 0))
+	transform: var(--transform) translate3d(var(--x3), var(--y3), var(--z2));
 }
-
 ul:nth-of-type(17) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * -1), calc(var(--maat) * -1))
+	transform: var(--transform) translate3d(var(--x1), var(--y3), var(--z2));;
 }
 
+/* Top layer */
 ul:nth-of-type(18) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), calc(var(--maat) * -1))
+	transform: var(--transform) translate3d(var(--x2), var(--y2), var(--z1));
 }
-
 ul:nth-of-type(19) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 1), calc(var(--maat) * -1))
+	transform: var(--transform) translate3d(var(--x3), var(--y2), var(--z1));
 }
-
 ul:nth-of-type(20) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * -1), calc(var(--maat) * 0))
+	transform: var(--transform) translate3d(var(--x1), var(--y2), var(--z1));
 }
-
 ul:nth-of-type(21) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * -1), calc(var(--maat) * -1))
+	transform: var(--transform) translate3d(var(--x2), var(--y2), var(--z3));
 }
-
 ul:nth-of-type(22) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 0), calc(var(--maat) * 0))
+	transform: var(--transform) translate3d(var(--x3), var(--y2), var(--z3));
 }
-
 ul:nth-of-type(23) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 0), calc(var(--maat) * -1))
+	transform: var(--transform) translate3d(var(--x1), var(--y2), var(--z3));
 }
-
 ul:nth-of-type(24) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 1), calc(var(--maat) * 0))
+	transform: var(--transform) translate3d(var(--x2), var(--y2), var(--z2));
 }
-
-ul:nth-of-type(24) {
-	transform:rotatex(0) rotatey(0turn) rotatez(0) translate3d(calc(var(--maat) * -1), calc(var(--maat) * 1), calc(var(--maat) * -1))
-}
-
 ul:nth-of-type(25) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * 0), var(--maat))
+	transform: var(--transform) translate3d(var(--x3), var(--y2), var(--z2));
 }
-
-ul:nth-of-type(26) {
-	transform:rotatex(0) rotatey(0) rotatez(0) translate3d(calc(var(--maat) * 0), calc(var(--maat) * -1), var(--maat));
+ul:last-of-type {
+	transform: var(--transform) translate3d(var(--x1), var(--y2), var(--z2));;
 }
 
 li {
@@ -208,6 +189,15 @@ li:nth-of-type(5)::before {
 
 li:nth-of-type(6)::before {
     background-color: #FF4500;
+}
+
+@keyframes draaien {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotate3d(1,1,1, 360deg);
+    }
 }
 
 
