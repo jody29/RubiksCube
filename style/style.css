@@ -1,6 +1,6 @@
 /* Custom props */
 :root {
-    --maat: 5em;
+    --maat: 3em;
     --x1: calc(var(--maat) * 1);
     --x2: calc(var(--maat) * -1);
     --x3: calc(var(--maat) * 0);
@@ -20,10 +20,12 @@ main {
 }
 
 section:nth-of-type(2) {
+    transform: rotatex(0deg) rotateY(0deg);
     height: 100vh;
     display: grid;
     place-items: center;
     transform-style: preserve-3d;
+    animation-play-state: paused;
 }
 
 
@@ -51,10 +53,39 @@ input {
 }
 
 section:first-of-type {
-    background-color: #0047B4;
-    width: 65%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     position: absolute;
+}
+
+section:first-of-type label {
+    position: absolute;
+    font-size: 2em;
+    background-color: rgb(50,50,50);
+    color: white;
+    padding: .5em;
+    border-radius: .5em;
+    box-shadow: 0px 0px 5px black;
+}
+
+section:first-of-type label:first-of-type {
+    right: 48%;
+    top: 1em;
+}
+
+section:first-of-type label:nth-of-type(2) {
+    left: 15%;
+    top: 46%;
+}
+
+section:first-of-type label:nth-of-type(3) {
+    right: 48%;
+    bottom: 1em;
+}
+
+section:first-of-type label:last-of-type {
+    right: 15%;
+    top: 46%;
 }
 
 section:nth-of-type(2) {
@@ -62,16 +93,20 @@ section:nth-of-type(2) {
 }
 
 #cubeUp:checked ~ section:nth-of-type(2) {
-    transform: rotateX(90deg);
+    animation-play-state: running;
+    animation: turnUp 10s linear infinite;
 }
 #cubeDown:checked ~ section:nth-of-type(2) {
-    transform: rotateX(-90deg);
+    animation-play-state: running;
+    animation: turnDown 10s linear infinite;
 }
 #cubeRight:checked ~ section:nth-of-type(2) {
-    transform: rotateY(-90deg);
+    animation-play-state: running;
+    animation: turnRight 10s linear infinite;
 }
 #cubeLeft:checked ~ section:nth-of-type(2) {
-    transform: rotateY(90deg);
+    animation-play-state: running;
+    animation: turnLeft 10s linear infinite;
 }
 
 /* Bottom layer */
@@ -222,7 +257,7 @@ li:nth-of-type(6)::before {
 }
 
 /* Animations */
-@keyframes turnX {
+@keyframes turnUp {
     0% {
         transform: none;
     }
@@ -231,12 +266,30 @@ li:nth-of-type(6)::before {
     }
 }
 
-@keyframes turnY {
+@keyframes turnDown {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotateX(-360deg);
+    }
+}
+
+@keyframes turnRight {
     0% {
         transform: none;
     }
     100% {
         transform: rotateY(360deg);
+    }
+}
+
+@keyframes turnLeft {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotateY(-360deg);
     }
 }
 
