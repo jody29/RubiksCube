@@ -12,6 +12,10 @@
     --z3: calc(var(--maat) * 0);
 }
 
+body {
+    margin: 0;
+}
+
 main {
     position: relative;
     display: flex;
@@ -51,39 +55,35 @@ input {
 }
 
 section:first-of-type {
-    width: 100%;
-    height: 100%;
+    width: 13%;
+    height: 20%;
+    flex-wrap: wrap;
     position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+    border-radius: 1em;
 }
 
 section:first-of-type label {
-    position: absolute;
     font-size: 3.5vmin;
-    background-color: rgb(50,50,50);
-    color: white;
+    background-color: white;
+    color: black;
     padding: .5em;
     border-radius: .5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
     box-shadow: 0px 0px 5px black;
+    cursor: pointer;
 }
 
 section:first-of-type label:first-of-type {
-    right: 48%;
-    top: 1em;
-}
-
-section:first-of-type label:nth-of-type(2) {
-    left: 15%;
-    top: 46%;
-}
-
-section:first-of-type label:nth-of-type(3) {
-    right: 48%;
-    bottom: 1em;
-}
-
-section:first-of-type label:last-of-type {
-    right: 15%;
-    top: 46%;
+    margin-left: 2.7em;
+    margin-right: 2.1em;
 }
 
 section:nth-of-type(2) {
