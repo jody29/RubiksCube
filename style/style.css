@@ -10,32 +10,22 @@
     --z1: calc(var(--maat) * 1);
     --z2: calc(var(--maat) * -1);
     --z3: calc(var(--maat) * 0);
+    --background: rgb(56,56,56)
+
 }
 
 body {
     margin: 0;
 }
 
-main {
+main { 
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(56, 56, 56);
+    background-image: none;
+    background: var(--background);
     perspective: 30em;
-}
-
-/* Container of the cube */
-section:nth-of-type(2) {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    transform-style: preserve-3d;
-    animation-play-state: paused;
-}
-
-section:nth-of-type(2) {
-    transition: 1s;
 }
 
 /* Cube properties */
@@ -79,7 +69,7 @@ section:first-of-type {
 
 /* labels styling controls */
 section:first-of-type label {
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     background-color: white;
     color: black;
     padding: .5em;
@@ -230,6 +220,18 @@ section:last-of-type label:last-of-type {
     --ry: -90deg;
 }
 
+/* Container of the cube */
+section:nth-of-type(2) {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transform-style: preserve-3d;
+    animation-play-state: paused;
+}
+
+section:nth-of-type(2) {
+    transition: 1s;
+}
 
 /* Bottom layer */
 ul:first-of-type {
@@ -340,6 +342,79 @@ li::before {
     border-radius: .5em;
 }
 
+/* Customize controls container */
+section:nth-of-type(3) {
+    position: absolute;
+    display: flex;
+    left: 2em;
+    top: 2em;
+}
+
+/* Customize controls label */
+section:nth-of-type(3) label {
+    background-color: white;
+    color: black;
+    padding: .5em;
+    font-size: 2.5vmin;
+    border-radius: .5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-right: .5em;
+    box-shadow: 0px 0px 5px black;
+}
+
+section:nth-of-type(3) label:last-of-type {
+    background-image: repeating-radial-gradient(#e66465, #9198e5, rgb(20,20,20) 5%);
+    animation: crazy 1s linear infinite alternate-reverse;
+    background-position: 50%;
+    color: white;
+}
+
+/* image on one side of the cube */
+#image:checked ~ section:nth-of-type(2) ul li:nth-of-type(1)::before {
+    background-image: url('/assets/monkey.jpeg');
+    background-size: calc(var(--maat) * 3) calc(var(--maat) * 3);
+}
+
+/* cube becomes transparent */
+#transparant:checked ~ section:nth-of-type(2) ul li {
+    background-color: transparent;
+}
+
+#crazy:checked ~ main {
+    background-image: repeating-radial-gradient(#e66465, #9198e5, rgb(20,20,20) 5%);
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: crazy 1s linear infinite alternate-reverse;
+}
+
+section:nth-of-type(2) ul:first-of-type li:first-of-type::before {
+    background-position: left bottom;
+}
+section:nth-of-type(2) ul:nth-of-type(2) li:first-of-type::before {
+    background-position: center bottom;
+}
+section:nth-of-type(2) ul:nth-of-type(3) li:first-of-type::before {
+    background-position: right bottom;
+}
+section:nth-of-type(2) ul:nth-of-type(10) li:first-of-type::before {
+    background-position: left center;
+}
+section:nth-of-type(2) ul:nth-of-type(11) li:first-of-type::before {
+    background-position: center center;
+}
+section:nth-of-type(2) ul:nth-of-type(12) li:first-of-type::before {
+    background-position: right center;
+}
+section:nth-of-type(2) ul:nth-of-type(19) li:first-of-type::before {
+    background-position: left top;
+}
+section:nth-of-type(2) ul:nth-of-type(20) li:first-of-type::before {
+    background-position: center top;
+}
+section:nth-of-type(2) ul:nth-of-type(21) li:first-of-type::before {
+    background-position: right top;
+}
 
 /* Single cube sides */
 ul li:nth-of-type(1) {
@@ -415,6 +490,15 @@ li:nth-of-type(6)::before {
     }
     100% {
         transform: rotateY(-8turn) rotateX(-.3turn);
+    }
+}
+
+@keyframes crazy {
+    0% {
+        background-size: 100% 100%;
+    }
+    100% {
+        background-size: 200% 200%;
     }
 }
 
