@@ -1,10 +1,10 @@
 # Rubiks Cube @CSS-TO-THE-RESCUE-2122
 
 ## Table of contents
-* [Eindresultaat]()
-* [Opdracht]()
-* [Technieken]()
-* [Week 1]()
+* [Eindresultaat](https://github.com/jody29/RubiksCube#eindresultaat)
+* [Opdracht](https://github.com/jody29/RubiksCube#opdracht)
+* [Technieken](https://github.com/jody29/RubiksCube#technieken)
+* [Week 1](https://github.com/jody29/RubiksCube#week1)
 * [Week 2]()
 * [Week 3]()
 * [Week 4]()
