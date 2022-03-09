@@ -84,3 +84,4 @@ In de laatste week was het vooral de bedoeling dat ik wat extraatjes erbij kon d
 * [Sanne 't Hooft](https://github.com/shooft)
 * [Pepijn](https://github.com/ppijn)
 * [Bas](https://github.com/basv1996)
+* [Grid generator](https://cssgrid-generator.netlify.app/)
