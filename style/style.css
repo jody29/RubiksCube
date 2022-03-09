@@ -320,6 +320,7 @@ ul:last-of-type {
 	transform: var(--transform) translate3d(var(--x1), var(--y2), var(--z2));;
 }
 
+/* sides of the small cubes */
 li {
     position: absolute;
     top: 0;
@@ -333,6 +334,7 @@ li {
     justify-content: center;
 }
 
+/* sticker on the sides of the small blocks */
 li::before {
     content: '';
     height: 87%;
@@ -363,6 +365,7 @@ section:nth-of-type(3) label {
     box-shadow: 0px 0px 5px black;
 }
 
+/* crazy mode button */
 section:nth-of-type(3) label:last-of-type {
     background-image: repeating-radial-gradient(#e66465, #9198e5, rgb(20,20,20) 5%);
     animation: crazy 1s linear infinite alternate-reverse;
@@ -381,6 +384,7 @@ section:nth-of-type(3) label:last-of-type {
     background-color: transparent;
 }
 
+/* main gets a radial gradient */
 #crazy:checked ~ main {
     background-image: repeating-radial-gradient(#e66465, #9198e5, rgb(20,20,20) 5%);
     background-position: center;
@@ -388,6 +392,7 @@ section:nth-of-type(3) label:last-of-type {
     animation: crazy 1s linear infinite alternate-reverse;
 }
 
+/* positioning of the image on a cube side */
 section:nth-of-type(2) ul:first-of-type li:first-of-type::before {
     background-position: left bottom;
 }
