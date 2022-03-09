@@ -26,6 +26,9 @@ Ik heb ervoor gekozen om met CSS een interactieve rubiks kubus te gaan maken. Ik
 * Animation
 * Interaction
 
+## Proces 
+Check mijn [commits](https://github.com/jody29/RubiksCube/commits/main) om mijn code proces gedetaileerd te kunnen volgen.
+
 ## Week 1
 ![Schermafbeelding 2022-03-04 om 01 23 17](https://user-images.githubusercontent.com/66092262/156675547-6a0a08fe-7959-4a25-be6f-945e51818709.png)
 
