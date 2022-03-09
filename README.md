@@ -4,11 +4,11 @@
 * [Eindresultaat](https://github.com/jody29/RubiksCube#eindresultaat)
 * [Opdracht](https://github.com/jody29/RubiksCube#opdracht)
 * [Technieken](https://github.com/jody29/RubiksCube#technieken)
-* [Week 1](https://github.com/jody29/RubiksCube#week1)
-* [Week 2]()
-* [Week 3]()
-* [Week 4]()
-* [Credits]()
+* [Week 1](https://github.com/jody29/RubiksCube#week-1)
+* [Week 2](https://github.com/jody29/RubiksCube#week-2)
+* [Week 3](https://github.com/jody29/RubiksCube#week-3)
+* [Week 4](https://github.com/jody29/RubiksCube#week-4)
+* [Credits](https://github.com/jody29/RubiksCube#credits)
 
 ## Eindresultaat
 <img width="1440" alt="Schermafbeelding 2022-03-09 om 13 29 16" src="https://user-images.githubusercontent.com/66092262/157444774-b13a7b48-afb5-4aba-ad2a-8f99be253c63.png">
