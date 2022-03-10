@@ -82,6 +82,16 @@ In week 3 ben ik aan de slag gegaan met de controls van de kubus. Ik heb de cont
 
 In de laatste week was het vooral de bedoeling dat ik wat extraatjes erbij kon doen. Zo heb ik ervoor gezorgd dat het nu mogelijk is om een afbeelding te tonen op een zijde van de kubus. Dit heb ik gedaan door op de ::before van een `<li>` een background-image te zetten. Dit moet dan alleen op een zijde gebeuren. Ik heb een zijde kunnen selecteren door ul 1, 2, 3, 10, 11, 12, 19, 20 en 21 te selecteren. Per blokje geef ik de background-image een andere background-position. Zo komt er uiteindelijk op een zijde een afbeelding. Ook heb ik een knop toegevoegd dat de kubus transparant is. Vervolgens heb ik nog een crazy modus toegevoegd. Als je op de knop klikt dan krijgt de `<main>` een repeating-radial-gradient. Deze animeer ik door de background-size van 100% naar 200% te laten gaan in een loop. Dit moet een trippy gevoel krijgen.
 
+### Wat is gelukt?
+* Toevoegen van extra interacties
+* Afbeelding op een zijde van kubus krijgen
+
+### Wat ging minder goed?
+Deze week had ik niet echt dingen die minder goed gingen
+
+### Wat heb ik geleerd?
+* Hoe je een afbeelding op een zijde van een kubus kan krijgen
+
 ## Credits
 * Huilsessies
 * [Sanne 't Hooft](https://github.com/shooft)
